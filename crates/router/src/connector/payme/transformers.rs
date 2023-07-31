@@ -425,9 +425,9 @@ impl
 #[derive(Default, Debug, Serialize, Deserialize, PartialEq)]
 pub struct PaymeErrorResponse {
     pub status_code: u16,
-    pub code: String,
-    pub message: String,
-    pub reason: Option<String>,
+    pub status_error_details: String,
+    pub status_additional_info: String,
+    pub status_error_code: u16,
 }
 
 #[derive(Debug, Deserialize)]
